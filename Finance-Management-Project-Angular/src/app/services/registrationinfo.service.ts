@@ -16,7 +16,7 @@ export class RegistrationinfoService {
   })
   }
   constructor(http:HttpClient) { 
-    this.http = http;
+    this.http = this.http;
   }
   RegisterCustomer(reg:ReginfoModule):Observable<boolean>{
     return this.http.post<boolean>(this.url+"/"+"RegisterCustomer",reg,this.httpOptions);
